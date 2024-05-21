@@ -1,4 +1,4 @@
-import DetailsPage from "@/components/card-details/DetailsPage";
+import DetailsPage from "@/components/Molecules/card-details/DetailsPage";
 import {
   NATIVE_DETAILS_CAREER,
   NATIVE_DETAILS_KIDS,

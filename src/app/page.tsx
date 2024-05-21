@@ -1,19 +1,19 @@
 "use client";
 import { svgLogo } from "@/assets/brand";
 import { bgGirl, campaignBg, cardImg } from "@/assets/images";
-import AbouteNativeCards from "@/components/AboutNativeCards";
-import CustomButton from "@/components/CustomButton";
-import Header from "@/components/home/Header";
-import NativeCardTypeCard from "@/components/NativeCardTypeCard";
-import TicketPurchaseCard from "@/components/TicketPurchaseCard";
+import AbouteNativeCards from "@/components/Molecules/AboutNativeCards";
+import CustomButton from "@/components/Atoms/CustomButton";
+import Header from "@/components/Organisms/home/Header";
 import { NATIVE_CARD_TYPES, TICKET_CATEGORIES } from "@/constants/native-home";
 import { Carousel, Embla } from "@mantine/carousel";
 import { useRouter } from "next/navigation";
 import "@mantine/carousel/styles.css";
-import Footer from "@/components/home/Footer";
-import FAQAccordian from "@/components/home/FAQAccordian";
+import Footer from "@/components/Organisms/home/Footer";
+import FAQAccordian from "@/components/Organisms/home/FAQAccordian";
 import Autoplay from "embla-carousel-autoplay";
 import { useEffect, useRef, useState } from "react";
+import NativeCardTypeCard from "@/components/Molecules/NativeCardTypeCard";
+import TicketPurchaseCard from "@/components/Molecules/TicketPurchaseCard";
 
 export default function Home() {
   const router = useRouter();

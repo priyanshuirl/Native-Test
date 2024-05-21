@@ -1,0 +1,16 @@
+.input {
+  background-color: white;
+  padding: 12px 8px;
+  height: 48px;
+  color: #374151;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 12px;
+}
+
+.innerInput {
+  position: relative;
+  top: -5px;
+}

@@ -1,6 +1,6 @@
 "use client";
+import CustomButton from "@/components/Atoms/CustomButton";
 import React from "react";
-import CustomButton from "../CustomButton";
 
 interface INativeCardTypeCardProps
   extends React.HTMLAttributes<HTMLDivElement> {

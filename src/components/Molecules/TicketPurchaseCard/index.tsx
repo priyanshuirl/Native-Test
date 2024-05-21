@@ -1,6 +1,6 @@
 import React from "react";
-import CustomButton from "../CustomButton";
 import { formatNumber } from "@/utils";
+import CustomButton from "@/components/Atoms/CustomButton";
 
 const Tag = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => {
   const classes =

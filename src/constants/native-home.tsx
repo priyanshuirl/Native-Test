@@ -23,15 +23,17 @@ export const NATIVE_CARD_TYPES = [
     img: NativeLoveImg.src,
     bgImage: NatiLoveBg.src,
     path: "details/love",
+    menuItemText: "for love を深く知る?",
   },
   {
     id: "2",
-    title: "native. for Carrer",
+    title: "native. for Career",
     description:
       "年収、社会的認知のような表層情報に囚われず、肩の力を抜いて、native. (自然体の姿）な自分で、心から楽しめるシゴトを",
     img: NativeCareerImg.src,
     bgImage: NativeCareerBg.src,
     path: "details/career",
+    menuItemText: "for Career を深く知る?",
   },
   {
     id: "3",
@@ -41,6 +43,7 @@ export const NATIVE_CARD_TYPES = [
     img: NativeKidsImg.src,
     bgImage: NativeKidsBg.src,
     path: "details/kids",
+    menuItemText: "for Kids を深く知る?",
   },
 ];
 
