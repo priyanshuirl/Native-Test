@@ -51,6 +51,7 @@ export default function GenerateNativeCardModal({ onClose, open }: PropTypes) {
             label="生年月日を入力してください"
             value={""}
             onChange={(data) => {}}
+            name="date"
           />
           <CustomButton>native. card を発行する</CustomButton>
         </Stack>
