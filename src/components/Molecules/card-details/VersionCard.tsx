@@ -1,7 +1,7 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { NativeCardDetailsT } from "@/constants/native-details";
-import CustomButton from "../Atoms/CustomButton";
+import CustomButton from "@/components/Atoms/CustomButton";
 
 interface IVersionCardProps extends React.HTMLAttributes<HTMLDivElement> {
   cardDetails: NativeCardDetailsT["cardVersions"][0];

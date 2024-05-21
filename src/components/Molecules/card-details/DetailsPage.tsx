@@ -4,7 +4,7 @@ import DetailsCard from "./DetailsCard";
 import { NativeCardDetailsT } from "@/constants/native-details";
 import BackHeader from "./BackHeader";
 import AbouteNativeCards from "../AboutNativeCards";
-import Footer from "../home/Footer";
+import Footer from "@/components/Organisms/home/Footer";
 
 interface IDetailsPageProps {
   details: NativeCardDetailsT;
