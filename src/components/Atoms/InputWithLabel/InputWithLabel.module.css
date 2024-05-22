@@ -10,6 +10,10 @@
   border-radius: 12px;
 }
 
+.input > div {
+  border: none !important;
+}
+
 .innerInput {
   position: relative;
   top: -5px;

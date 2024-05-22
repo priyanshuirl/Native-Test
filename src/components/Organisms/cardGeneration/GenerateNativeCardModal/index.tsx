@@ -5,6 +5,7 @@ import { Stack } from "@mantine/core";
 import { NativeLoveLongImg, NativeLoveShortImg } from "@/assets/images";
 import CustomButton from "@/components/Atoms/CustomButton";
 import InputWithLabel from "@/components/Atoms/InputWithLabel";
+import { useState } from "react";
 
 interface PropTypes {
   open: boolean;
@@ -12,6 +13,7 @@ interface PropTypes {
 }
 
 export default function GenerateNativeCardModal({ onClose, open }: PropTypes) {
+  const [date, setDate] = useState();
   return (
     <Menu onClose={onClose} open={open} title="native. card を発行する">
       <div className={styles.ticketInfo}>
@@ -49,9 +51,10 @@ export default function GenerateNativeCardModal({ onClose, open }: PropTypes) {
         <Stack gap={"md"} className="mb-5">
           <InputWithLabel
             label="生年月日を入力してください"
-            value={""}
-            onChange={(data) => {}}
+            value={date}
+            onDateChange={(date) => setDate(date)}
             name="date"
+            type="date"
           />
           <CustomButton>native. card を発行する</CustomButton>
         </Stack>
