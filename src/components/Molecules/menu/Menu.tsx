@@ -15,9 +15,16 @@ interface PropTypes {
   onClose: () => void;
   children: React.ReactNode;
   title: string;
+  withoutFooter?: boolean;
 }
 
-const Menu = ({ onClose, open, children, title }: PropTypes) => {
+const Menu = ({
+  onClose,
+  open,
+  children,
+  title,
+  withoutFooter = false,
+}: PropTypes) => {
   return (
     <Drawer
       opened={open}
@@ -43,26 +50,30 @@ const Menu = ({ onClose, open, children, title }: PropTypes) => {
       </Card>
       <Stack gap="sm">
         <Stack gap="sm">{children}</Stack>
-        <MenuContentCard>
-          <div className="flex flex-col gap-3 py-6">
-            {FOOTER_LINKS.map((item: any) => (
-              <Link
-                className="text-sm font-medium"
-                key={item.title}
-                href={item.link}
-              >
-                <p className="text-black">{item.title}</p>
-              </Link>
-            ))}
-          </div>
-        </MenuContentCard>
-        <div className="flex flex-col items-center mb-5">
-          <img
-            className="w-[120px] h-[75px]"
-            src={svgLogo.src}
-            alt="Logo Img"
-          />
-        </div>
+        {withoutFooter ? null : (
+          <>
+            <MenuContentCard>
+              <div className="flex flex-col gap-3 py-6">
+                {FOOTER_LINKS.map((item: any) => (
+                  <Link
+                    className="text-sm font-medium"
+                    key={item.title}
+                    href={item.link}
+                  >
+                    <p className="text-black">{item.title}</p>
+                  </Link>
+                ))}
+              </div>
+            </MenuContentCard>
+            <div className="flex flex-col items-center mb-5">
+              <img
+                className="w-[120px] h-[75px]"
+                src={svgLogo.src}
+                alt="Logo Img"
+              />
+            </div>
+          </>
+        )}
       </Stack>
     </Drawer>
   );
