@@ -29,11 +29,8 @@ const AppMenu = ({ onClose, open }: PropTypes) => {
             <Stack gap={"lg"} style={{ width: "100%" }}>
               {NATIVE_CARD_TYPES?.map(({ img, id, menuItemText }) => {
                 return (
-                  <Link href="/generate-card/love">
-                    <div
-                      className="flex items-center justify-between w-full cursor-pointer"
-                      key={id}
-                    >
+                  <Link href="/generate-card/love" key={id}>
+                    <div className="flex items-center justify-between w-full cursor-pointer">
                       <div className="flex items-center gap-6">
                         <img
                           src={img}
