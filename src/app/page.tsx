@@ -3,17 +3,17 @@ import { svgLogo } from "@/assets/brand";
 import { bgGirl, campaignBg, cardImg } from "@/assets/images";
 import AbouteNativeCards from "@/components/Molecules/AboutNativeCards";
 import CustomButton from "@/components/Atoms/CustomButton";
-import Header from "@/components/Organisms/home/Header";
 import { NATIVE_CARD_TYPES, TICKET_CATEGORIES } from "@/constants/native-home";
 import { Carousel, Embla } from "@mantine/carousel";
 import { useRouter } from "next/navigation";
 import "@mantine/carousel/styles.css";
-import Footer from "@/components/Organisms/home/Footer";
-import FAQAccordian from "@/components/Organisms/home/FAQAccordian";
+import Footer from "@/components/Organisms/footer/Footer";
+import FAQAccordian from "@/components/Organisms/faqAccordion/FAQAccordian";
 import Autoplay from "embla-carousel-autoplay";
 import { useEffect, useRef, useState } from "react";
 import NativeCardTypeCard from "@/components/Molecules/NativeCardTypeCard";
 import TicketPurchaseCard from "@/components/Molecules/TicketPurchaseCard";
+import Header from "@/components/Organisms/header/Header";
 
 export default function Home() {
   const router = useRouter();

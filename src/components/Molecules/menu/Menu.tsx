@@ -30,6 +30,7 @@ const Menu = ({ onClose, open, children, title }: PropTypes) => {
       }}
       withCloseButton={false}
       padding={0}
+      key={title}
     >
       <Card className={styles.headerCard}>
         <Title order={3}>{title}</Title>

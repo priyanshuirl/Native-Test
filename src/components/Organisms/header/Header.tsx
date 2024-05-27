@@ -3,8 +3,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoPerson } from "react-icons/io5";
 import { useState } from "react";
 import { Button } from "@mantine/core";
-import AppMenu from "./components/AppMenu";
-import AccountMenu from "./components/AccountMenu";
+import AppMenu from "../appMenu/AppMenu";
+import AccountMenu from "../accountMenu/AccountMenu";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);

@@ -1,21 +1,23 @@
-import { Menu } from "@/components/Molecules/menu/Menu";
+"use client";
+import React, { useState } from "react";
 import styles from "./GenerateNativeCardModal.module.css";
 import { TiTicket } from "react-icons/ti";
 import { Stack } from "@mantine/core";
 import { NativeLoveLongImg, NativeLoveShortImg } from "@/assets/images";
 import CustomButton from "@/components/Atoms/CustomButton";
 import InputWithLabel from "@/components/Atoms/InputWithLabel";
-import { useState } from "react";
+import { Menu } from "@/components/Molecules/menu/Menu";
+import { useRouter } from "next/navigation";
 
-interface PropTypes {
-  open: boolean;
-  onClose: () => void;
-}
-
-export default function GenerateNativeCardModal({ onClose, open }: PropTypes) {
+export default function GenerateNativeCardCategory() {
+  const router = useRouter();
   const [date, setDate] = useState();
   return (
-    <Menu onClose={onClose} open={open} title="native. card を発行する">
+    <Menu
+      onClose={() => router.back()}
+      open={true}
+      title="native. card を発行する"
+    >
       <div className={styles.ticketInfo}>
         <TiTicket />
         １枚の無料発行ができます
