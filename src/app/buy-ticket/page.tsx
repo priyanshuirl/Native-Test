@@ -57,8 +57,8 @@ export default function BuyTicket() {
           Select plan
         </p>
         <Stack gap={16}>
-          {ticketSuggestions.map((suggestion) => {
-            return <TicketSuggestion {...suggestion} />;
+          {ticketSuggestions.map((suggestion, index) => {
+            return <TicketSuggestion {...suggestion} key={index} />;
           })}
         </Stack>
         <div className="absolute bottom-[-24px] left-0 bg-white rounded-[24px] w-full pt-[16px] pb-[40px] px-[20px]">
