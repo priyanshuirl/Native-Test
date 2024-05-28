@@ -4,6 +4,7 @@
   border: 1px solid #ececec;
   background: var(--Foundation-White-white-50, #fff);
   padding: 16px;
+  min-height: 120px;
 }
 
 .chip {

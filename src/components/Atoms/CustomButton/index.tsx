@@ -8,23 +8,28 @@ export default function CustomButton({
   onClick,
   containerClassName,
   size = "md",
+  icon,
+  color = "black",
 }: {
   children: React.ReactNode;
   onClick?: () => void;
   containerClassName?: string;
   size?: MantineSize;
+  icon?: React.ReactNode;
+  color?: string;
 }) {
   return (
     <div className={containerClassName}>
       <Button
         onClick={onClick}
-        color="black"
+        color={color}
         fullWidth
         size={size}
         classNames={{
           root: styles.root,
           label: styles.label,
         }}
+        leftSection={icon}
       >
         {children}
       </Button>
